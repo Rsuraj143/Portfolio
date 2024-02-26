@@ -5,7 +5,7 @@ function About() {
 			id="about"
 		>
 			<h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-10">
-				About me 
+				About me
 			</h3>
 			<div className="flex items-center justify-center w-36 h-36 sm:w-40 sm:h-40 object-contain bg-nik-lightGray p-3 rounded-full shadow-xl hover:shadow-inner cursor-pointer hover:border-gray-100">
 				<img
