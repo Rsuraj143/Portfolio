@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: "Poppins", sans-serif;
+	overflow-x: hidden;
+}
+
+@layer components {
+	* {
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+
+	.stickyNavbar {
+		@apply sticky top-0;
+	}
+
+	.main-container {
+    @apply max-w-[1440px] mx-auto px-5 py-8 ;
+  }
+
+
+	.stickyNavbarStyles {
+		@apply flex  items-center justify-between w-full px-8 sm:px-16 py-5 shadow-lg bg-opacity-75;
+	}
+
+	.sidebar-link {
+		@apply px-10 rounded-lg py-4 text-lg text-white md:text-sm cursor-pointer hover:bg-white hover:bg-opacity-10 hover:shadow-md transition duration-200 ease-in-out;
+	}
+
+	.socialLink {
+		@apply flex items-center justify-center bg-white hover:shadow-lg shadow-2xl w-14 h-14 rounded-2xl p-3 cursor-pointer border border-transparent hover:border-gray-200;
+	}
+
+	.active {
+		@apply bg-white bg-opacity-10;
+	}
+
+	.navLink {
+		@apply px-3 py-2 rounded-lg border border-transparent hover:bg-white hover:bg-opacity-10 transition-all cursor-pointer uppercase text-white;
+	}
+
+	.hobbyBox {
+		@apply flex items-center justify-around px-5 py-4 bg-white bg-opacity-5 rounded-3xl space-x-5 cursor-pointer hover:shadow-xl shadow-inner border border-transparent hover:border-gray-200;
+	}
+
+	.hide-scrollbar::-webkit-scrollbar {
+		width: 0px;
+		background: transparent; /* make scrollbar transparent */
+	}
+}
