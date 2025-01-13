@@ -21,7 +21,7 @@ function Contact() {
 				</div>
 				<form
 					className="kwes-form flex flex-col items-start w-full lg:w-1/2 bg-white bg-opacity-5 rounded-3xl px-7 py-8 sm:px-12 sm:py-10 border border-transparent hover:shadow-md space-y-6 text-sm sm:text-base"
-					action="https://kwesforms.com/api/foreign/forms/vjupCiNM6fcJihlNE8mx"
+					action="https://kwesforms.com/api/f/vjupCiNM6fcJihlNE8mx"
 				>
 					<div className="flex flex-col w-full space-y-4">
 						<div className="flex flex-col items-start text-gray-500 space-y-3">
