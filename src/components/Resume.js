@@ -1,14 +1,11 @@
 import CertificateCard from "./CertificateCard";
 import EducationCard from "./EducationCard";
 import SkillCard from "./SkillCard";
-import { FaEye } from "react-icons/fa";
-import { IoMdClose } from "react-icons/io";
 import { FiDownload } from "react-icons/fi";
 import { useState } from "react";
 import ExperienceCard from "./ExperienceCard";
 
 function Resume() {
-  const [resumeBtn, setResumeBtn] = useState("false");
   return (
     <div
       className="flex flex-col items-center main-container pt-10 pb-12 px-4 sm:px-16"
@@ -41,9 +38,16 @@ function Resume() {
           Experience
         </h6>
         <div className="grid grid-cols-1 px-8 md:grid-cols-2 gap-6 lg:flex-row justify-around w-full">
+        <ExperienceCard
+            logo="/static/images/milesLogo.png"
+            year="May 2024 - Present"
+            post="Front End Developer"
+            company="Miles Education Pvt. Ltd."
+            info="Working as a Front End Developer In Miles Education. Proficient In NextJs, ReactJS, Tailwind CSS etc. I have worked on some projects called MilesForce that similar to CRM. I have explored NextJS,Tailwind CSS"
+          />
           <ExperienceCard
             logo="/static/images/TrooInbound_logo.svg"
-            year="Nov 2022 - Present"
+            year="Nov 2022 - May 2024"
             post="Front End Developer"
             company="TRooInbound Pvt. Ltd."
             info="Working as a Front End Developer In TRooInbound. Proficient In ReactJS, Redux, Tailwind CSS etc. I have worked on some projects called Push-Analytics Admin Pannel and TRoo Themes. I have explored ReactJs,Tailwind CSS, React-Bootstrap."
